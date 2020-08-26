@@ -7,14 +7,34 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
-
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        view.backgroundColor = .red
+        
     }
-
-
+    
+    @IBAction func logoutAcc(_ sender: Any) {
+        
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print(error)
+        }
+        
+    }
+    
 }
 

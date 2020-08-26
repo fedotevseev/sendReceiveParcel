@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -30,6 +31,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user == nil {  self.presentAuthVC() }
+            
+        }
+        
+    }
+    
+    func presentAuthVC() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC") as! AuthVC
+//        authVC.modalPresentationStyle = .fullScreen
+        self.window?.rootViewController?.present(authVC, animated: true, completion: nil)
     }
 
     func sceneWillResignActive(_ scene: UIScene) {

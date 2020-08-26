@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6697857DD36290CBCB4859DC /* Pods_sendReceiveParcel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367AA38D13A46A15D3C07D4 /* Pods_sendReceiveParcel.framework */; };
 		B21C2FC424F6E713000E7887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21C2FC324F6E713000E7887 /* AppDelegate.swift */; };
 		B21C2FC624F6E713000E7887 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21C2FC524F6E713000E7887 /* SceneDelegate.swift */; };
 		B21C2FC824F6E713000E7887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21C2FC724F6E713000E7887 /* ViewController.swift */; };
 		B21C2FCB24F6E713000E7887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21C2FC924F6E713000E7887 /* Main.storyboard */; };
 		B21C2FCD24F6E715000E7887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21C2FCC24F6E715000E7887 /* Assets.xcassets */; };
 		B21C2FD024F6E715000E7887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21C2FCE24F6E715000E7887 /* LaunchScreen.storyboard */; };
+		B21C2FD824F6E91A000E7887 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B21C2FD724F6E919000E7887 /* GoogleService-Info.plist */; };
+		B21C2FDB24F6EE2D000E7887 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21C2FDA24F6EE2D000E7887 /* ExternalAccessory.framework */; };
+		B2766E4F24F70B8700F37EA2 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2766E4E24F70B8700F37EA2 /* AuthVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0367AA38D13A46A15D3C07D4 /* Pods_sendReceiveParcel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sendReceiveParcel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6620AAE283C4564AC47CFEB2 /* Pods-sendReceiveParcel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sendReceiveParcel.debug.xcconfig"; path = "Target Support Files/Pods-sendReceiveParcel/Pods-sendReceiveParcel.debug.xcconfig"; sourceTree = "<group>"; };
 		B21C2FC024F6E713000E7887 /* sendReceiveParcel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sendReceiveParcel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21C2FC324F6E713000E7887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B21C2FC524F6E713000E7887 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		B21C2FCC24F6E715000E7887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B21C2FCF24F6E715000E7887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B21C2FD124F6E715000E7887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B21C2FD724F6E919000E7887 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B21C2FDA24F6EE2D000E7887 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		B2766E4E24F70B8700F37EA2 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		EDBC147D537891D79B89E3CA /* Pods-sendReceiveParcel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sendReceiveParcel.release.xcconfig"; path = "Target Support Files/Pods-sendReceiveParcel/Pods-sendReceiveParcel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21C2FDB24F6EE2D000E7887 /* ExternalAccessory.framework in Frameworks */,
+				6697857DD36290CBCB4859DC /* Pods_sendReceiveParcel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2256E943CEE50A28D5C36F22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B21C2FDA24F6EE2D000E7887 /* ExternalAccessory.framework */,
+				0367AA38D13A46A15D3C07D4 /* Pods_sendReceiveParcel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B21C2FB724F6E713000E7887 = {
 			isa = PBXGroup;
 			children = (
 				B21C2FC224F6E713000E7887 /* sendReceiveParcel */,
 				B21C2FC124F6E713000E7887 /* Products */,
+				CAB38C7D5F6971DA81AF7981 /* Pods */,
+				2256E943CEE50A28D5C36F22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +79,34 @@
 		B21C2FC224F6E713000E7887 /* sendReceiveParcel */ = {
 			isa = PBXGroup;
 			children = (
+				B2766E4D24F70B6C00F37EA2 /* View */,
 				B21C2FC324F6E713000E7887 /* AppDelegate.swift */,
 				B21C2FC524F6E713000E7887 /* SceneDelegate.swift */,
 				B21C2FC724F6E713000E7887 /* ViewController.swift */,
 				B21C2FC924F6E713000E7887 /* Main.storyboard */,
 				B21C2FCC24F6E715000E7887 /* Assets.xcassets */,
 				B21C2FCE24F6E715000E7887 /* LaunchScreen.storyboard */,
+				B21C2FD724F6E919000E7887 /* GoogleService-Info.plist */,
 				B21C2FD124F6E715000E7887 /* Info.plist */,
 			);
 			path = sendReceiveParcel;
+			sourceTree = "<group>";
+		};
+		B2766E4D24F70B6C00F37EA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2766E4E24F70B8700F37EA2 /* AuthVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAB38C7D5F6971DA81AF7981 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6620AAE283C4564AC47CFEB2 /* Pods-sendReceiveParcel.debug.xcconfig */,
+				EDBC147D537891D79B89E3CA /* Pods-sendReceiveParcel.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B21C2FD424F6E715000E7887 /* Build configuration list for PBXNativeTarget "sendReceiveParcel" */;
 			buildPhases = (
+				5E288072117F4AE379969FD0 /* [CP] Check Pods Manifest.lock */,
 				B21C2FBC24F6E713000E7887 /* Sources */,
 				B21C2FBD24F6E713000E7887 /* Frameworks */,
 				B21C2FBE24F6E713000E7887 /* Resources */,
+				55F86774BC34CE2255C4AC92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +172,53 @@
 				B21C2FD024F6E715000E7887 /* LaunchScreen.storyboard in Resources */,
 				B21C2FCD24F6E715000E7887 /* Assets.xcassets in Resources */,
 				B21C2FCB24F6E713000E7887 /* Main.storyboard in Resources */,
+				B21C2FD824F6E91A000E7887 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55F86774BC34CE2255C4AC92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sendReceiveParcel/Pods-sendReceiveParcel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sendReceiveParcel/Pods-sendReceiveParcel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sendReceiveParcel/Pods-sendReceiveParcel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E288072117F4AE379969FD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sendReceiveParcel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B21C2FBC24F6E713000E7887 /* Sources */ = {
@@ -140,6 +227,7 @@
 			files = (
 				B21C2FC824F6E713000E7887 /* ViewController.swift in Sources */,
 				B21C2FC424F6E713000E7887 /* AppDelegate.swift in Sources */,
+				B2766E4F24F70B8700F37EA2 /* AuthVC.swift in Sources */,
 				B21C2FC624F6E713000E7887 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +370,10 @@
 		};
 		B21C2FD524F6E715000E7887 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6620AAE283C4564AC47CFEB2 /* Pods-sendReceiveParcel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sendReceiveParcel/sendReceiveParcel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WFFW7LZ8D;
 				INFOPLIST_FILE = sendReceiveParcel/Info.plist;
@@ -300,8 +390,10 @@
 		};
 		B21C2FD624F6E715000E7887 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDBC147D537891D79B89E3CA /* Pods-sendReceiveParcel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sendReceiveParcel/sendReceiveParcel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6WFFW7LZ8D;
 				INFOPLIST_FILE = sendReceiveParcel/Info.plist;
